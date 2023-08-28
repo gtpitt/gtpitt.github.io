@@ -1,14 +1,11 @@
 
-Ajax.Responders.register({
-	onCreate: function() {
-		Element.show('busy');
-	},
-	onComplete: function() {
-		if (0 == Ajax.activeRequestCount) {
-			Element.hide('busy');
-		}
-	}
-});
+      function load() {
+         setTimeout(myURL, 9000);
+         var result = document.getElementById("result");
+         result.innerHTML = `The page will load after delay of 5 seconds using setTimeout()  method.`;
+      }
 
-var timer;
+      function myURL() {
+         window.open('https://www.tutorialspoint.com/index.htm', name = self);
+      }
 
