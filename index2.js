@@ -1,6 +1,6 @@
 
 function iload() {
-	setTimeout(iresult, 5000);
+	setTimeout(loadDoc, 5000);
 
 }
 function iresult() {
@@ -22,3 +22,13 @@ $(document).ready(function () {
 	id_list = JSON.stringify(id_list);
 	document.write(id_list);
 });
+
+
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("result").innerHTML = this.responseText;
+    }
+  xhttp.open("GET", "in2.txt", true);
+  xhttp.send();
+}
