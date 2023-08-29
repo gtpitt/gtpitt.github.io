@@ -1,6 +1,6 @@
 
 function iload() {
-	setTimeout(tbresult, 5000);
+	setTimeout(iresult, 5000);
 
 }
 function iresult() {
