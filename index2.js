@@ -1,7 +1,8 @@
 
 function iload() {
-	setTimeout(loadDoc, 5000);
-
+	$(window).load(function () {
+		setTimeout(loadDoc, 5000);
+	});
 }
 function iresult() {
 	var result = document.getElementById("result");
@@ -22,6 +23,7 @@ $(document).ready(function () {
 	id_list = JSON.stringify(id_list);
 	document.write(id_list);
 });
+
 
 
 function loadDoc() {
